@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Accueil"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/Accueil" />
+        <item
+            android:id="@+id/nav_Profil"
+            android:icon="@drawable/ic_photo_library_black_24dp"
+            android:title="@string/Profil" />
+        <item
+            android:id="@+id/nav_Boite_de_reception"
+            android:icon="@drawable/ic_local_movies_black_24dp"
+            android:title="@string/Boite_de_reception" />
+
+        <item
+            android:id="@+id/nav_UVs"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="@string/UVs" />
+
+        <item
+            android:id="@+id/nav_Questions"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/Questions" />
+        <item
+            android:id="@+id/seance"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/Seance" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_about_us"
+                android:title="@string/nav_about_us" />
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:title="@string/privacy_policy" />
+        </menu>
+    </item>
+
+</menu>

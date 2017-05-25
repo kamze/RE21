@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- one blue for icon chosed in menu and one for the menu's theme-->
+    <color name="colorPrimary">#2224af</color>
+    <color name="colorPrimaryDark">#2224af</color>
+    <color name="colorAccent">#FFFFFF</color>
+</resources>
