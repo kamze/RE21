@@ -24,11 +24,12 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import info.androidhive.navigationdrawer.R;
-import info.androidhive.navigationdrawer.fragment.HomeFragment;
-import info.androidhive.navigationdrawer.fragment.MoviesFragment;
-import info.androidhive.navigationdrawer.fragment.NotificationsFragment;
-import info.androidhive.navigationdrawer.fragment.PhotosFragment;
-import info.androidhive.navigationdrawer.fragment.SettingsFragment;
+import info.androidhive.navigationdrawer.fragment.AccueilFragment;
+import info.androidhive.navigationdrawer.fragment.BoiteDeReceptionFragment;
+import info.androidhive.navigationdrawer.fragment.SeanceFrangment;
+import info.androidhive.navigationdrawer.fragment.UVsFragment;
+import info.androidhive.navigationdrawer.fragment.ProfilFragment;
+import info.androidhive.navigationdrawer.fragment.QuestionsFragment;
 import info.androidhive.navigationdrawer.other.CircleTransform;
 
 public class MainActivity extends AppCompatActivity {
@@ -50,12 +51,14 @@ public class MainActivity extends AppCompatActivity {
     public static int navItemIndex = 0;
 
     // tags used to attach the fragments
-    private static final String TAG_HOME = "home";
-    private static final String TAG_PHOTOS = "photos";
-    private static final String TAG_MOVIES = "movies";
-    private static final String TAG_NOTIFICATIONS = "notifications";
-    private static final String TAG_SETTINGS = "settings";
-    public static String CURRENT_TAG = TAG_HOME;
+    private static final String TAG_ACCUEIL = "accueil";
+    private static final String TAG_PROFIL = "profil";
+    private static final String TAG_Boite_de_reception = "Boite_de_reception";
+    private static final String TAG_UVS = "mes UVs";
+    private static final String TAG_QUESTIONS = "questions";
+    private static final String TAG_SEANCE = "seance";
+
+    public static String CURRENT_TAG = TAG_ACCUEIL;
 
     // toolbar titles respected to selected nav menu item
     private String[] activityTitles;
@@ -104,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (savedInstanceState == null) {
             navItemIndex = 0;
-            CURRENT_TAG = TAG_HOME;
+            CURRENT_TAG = TAG_ACCUEIL;
             loadHomeFragment();
         }
     }
@@ -194,27 +197,31 @@ public class MainActivity extends AppCompatActivity {
         switch (navItemIndex) {
             case 0:
                 // home
-                HomeFragment homeFragment = new HomeFragment();
-                return homeFragment;
+                AccueilFragment accueilFragment = new AccueilFragment();
+                return accueilFragment;
             case 1:
                 // photos
-                PhotosFragment photosFragment = new PhotosFragment();
-                return photosFragment;
+                ProfilFragment profilFragment = new ProfilFragment();
+                return profilFragment;
             case 2:
                 // movies fragment
-                MoviesFragment moviesFragment = new MoviesFragment();
-                return moviesFragment;
+                BoiteDeReceptionFragment boiteDeReceptionFragment = new BoiteDeReceptionFragment();
+                return boiteDeReceptionFragment;
             case 3:
                 // notifications fragment
-                NotificationsFragment notificationsFragment = new NotificationsFragment();
-                return notificationsFragment;
+                UVsFragment UVsFragment = new UVsFragment();
+                return UVsFragment;
 
             case 4:
                 // settings fragment
-                SettingsFragment settingsFragment = new SettingsFragment();
-                return settingsFragment;
+                QuestionsFragment questionsFragment = new QuestionsFragment();
+                return questionsFragment;
+
+            case 5:
+                SeanceFrangment seanceFrangment = new SeanceFrangment();
+                return seanceFrangment;
             default:
-                return new HomeFragment();
+                return new AccueilFragment();
         }
     }
 
@@ -239,23 +246,27 @@ public class MainActivity extends AppCompatActivity {
                     //Replacing the main content with ContentFragment Which is our Inbox View;
                     case R.id.home:
                         navItemIndex = 0;
-                        CURRENT_TAG = TAG_HOME;
+                        CURRENT_TAG = TAG_ACCUEIL;
                         break;
                     case R.id.nav_Profil:
                         navItemIndex = 1;
-                        CURRENT_TAG = TAG_PHOTOS;
+                        CURRENT_TAG = TAG_PROFIL;
                         break;
                     case R.id.nav_Boite_de_reception:
                         navItemIndex = 2;
-                        CURRENT_TAG = TAG_MOVIES;
+                        CURRENT_TAG = TAG_Boite_de_reception;
                         break;
                     case R.id.nav_UVs:
                         navItemIndex = 3;
-                        CURRENT_TAG = TAG_NOTIFICATIONS;
+                        CURRENT_TAG = TAG_UVS;
                         break;
                     case R.id.nav_Questions:
                         navItemIndex = 4;
-                        CURRENT_TAG = TAG_SETTINGS;
+                        CURRENT_TAG = TAG_QUESTIONS;
+                        break;
+                    case R.id.nav_seance:
+                        navItemIndex = 5;
+                        CURRENT_TAG = TAG_SEANCE;
                         break;
                     case R.id.nav_about_us:
                         // launch new intent instead of loading fragment
@@ -322,7 +333,7 @@ public class MainActivity extends AppCompatActivity {
             // rather than home
             if (navItemIndex != 0) {
                 navItemIndex = 0;
-                CURRENT_TAG = TAG_HOME;
+                CURRENT_TAG = TAG_ACCUEIL;
                 loadHomeFragment();
                 return;
             }

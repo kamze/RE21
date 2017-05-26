@@ -25,7 +25,7 @@
             android:icon="@drawable/ic_settings_black_24dp"
             android:title="@string/Questions" />
         <item
-            android:id="@+id/seance"
+            android:id="@+id/nav_seance"
             android:icon="@drawable/ic_settings_black_24dp"
             android:title="@string/Seance" />
     </group>
