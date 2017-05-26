@@ -248,25 +248,25 @@ public class MainActivity extends AppCompatActivity {
                         navItemIndex = 0;
                         CURRENT_TAG = TAG_ACCUEIL;
                         break;
-                    case R.id.nav_Profil:
-                        navItemIndex = 1;
-                        CURRENT_TAG = TAG_PROFIL;
-                        break;
                     case R.id.nav_Boite_de_reception:
-                        navItemIndex = 2;
+                        navItemIndex = 1;
                         CURRENT_TAG = TAG_Boite_de_reception;
                         break;
-                    case R.id.nav_UVs:
-                        navItemIndex = 3;
-                        CURRENT_TAG = TAG_UVS;
-                        break;
+                    //case R.id.nav_UVs:
+                      //  navItemIndex = 3;
+                      //  CURRENT_TAG = TAG_UVS;
+                      //  break;
                     case R.id.nav_Questions:
-                        navItemIndex = 4;
+                        navItemIndex = 2;
                         CURRENT_TAG = TAG_QUESTIONS;
                         break;
                     case R.id.nav_seance:
-                        navItemIndex = 5;
+                        navItemIndex = 3;
                         CURRENT_TAG = TAG_SEANCE;
+                        break;
+                    case R.id.nav_Profil:
+                        navItemIndex = 4;
+                        CURRENT_TAG = TAG_PROFIL;
                         break;
                     case R.id.nav_about_us:
                         // launch new intent instead of loading fragment

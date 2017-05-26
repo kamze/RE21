@@ -4,11 +4,11 @@
     android:layout_height="match_parent"
     tools:context="info.androidhive.navigationdrawer.fragment.ProfilFragment">
 
-    <ImageView
+    <!--<ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:alpha="0.3"
-        android:src="@drawable/ic_photo_library_black_24dp" />
+        android:src="@drawable/ic_photo_library_black_24dp" /> -->
 
 </FrameLayout>

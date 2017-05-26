@@ -8,21 +8,22 @@
 
     <!-- Navigation Drawer menu labels -->
     <string name="Accueil">Accueil</string>
-    <string name="Profil">Profil</string>
     <string name="Boite_de_reception">Boite de recéption</string>
-    <string name="UVs">Mes UVs/Cours</string>
+   <!-- <string name="UVs">Mes UVs/Cours</string> -->
     <string name="Questions">Poser une question</string>
-    <string name="Seance">Les Seance</string>
+    <string name="Seance">Les Séances</string>
+    <string name="Profil">Profil</string>
     <string name="nav_about_us">About Us</string>
 
     <!-- Toolbar titles when navigation menu item is selected -->
     <string-array name="nav_item_activity_titles">
         <item>Accueil</item>
-        <item>Profil</item>
         <item>Boite de recéption</item>
-        <item>Mes UVs/Cours</item>
+        <!--<item>Mes UVs/Cours</item> -->
         <item>Questions</item>
-        <item>Seance</item>
+        <item>Séance</item>
+        <item>Profil</item>
+
 
     </string-array>
 
