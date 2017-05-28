@@ -3,5 +3,8 @@
     <!-- one blue for icon chosed in menu and one for the menu's theme-->
     <color name="colorPrimary">#2224af</color>
     <color name="colorPrimaryDark">#2224af</color>
+    <item name="green" type="color">#FF00CC00</item>
+    <item name="gray" type="color">#233a46</item>
+
     <color name="colorAccent">#FFFFFF</color>
 </resources>

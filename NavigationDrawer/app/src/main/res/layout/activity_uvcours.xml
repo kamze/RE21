@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="S'inscrire dans un UV"
+        android:layout_gravity="center_horizontal"
+
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SY06"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"
+        android:buttonTint="@color/colorPrimary"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LO14"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"
+        android:buttonTint="@color/colorPrimary"
+
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LO11"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"
+        android:buttonTint="@color/colorPrimary"
+
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SY25"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"
+        android:buttonTint="@color/colorPrimary"
+
+        />
+
+
+    <EditText
+        android:id="@+id/inputSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:hint="Rechercher une UV   "
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Mes UVs dans lesquelles je suis inscrit"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="LS02"
+        android:checked="true"
+        android:buttonTint="@color/colorPrimary"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="LE03"
+        android:checked="true"
+        android:buttonTint="@color/colorPrimary"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="meat"
+        android:checked="true"
+        android:buttonTint="@color/colorPrimary"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="meat"
+        android:checked="true"
+        android:buttonTint="@color/colorPrimary"
+/>
+
+    <TextView
+        android:id="@+id/Cours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Voir la list des étudiants de mes UV"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#353db3"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/enregistrer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+</LinearLayout>

@@ -28,6 +28,8 @@
     </string-array>
 
     <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_uvcours">Mes UVs</string>
+    <string name="activity_title_schedule">Organiser une séance</string>
     <string name="activity_title_privacy_policy">Privacy Policy</string>
     <string name="action_clear_all">Clear All</string>
     <string name="action_logout">Logout</string>

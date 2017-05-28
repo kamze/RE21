@@ -1,14 +1,137 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="info.androidhive.navigationdrawer.fragment.ProfilFragment">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
 
-    <!--<ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:alpha="0.3"
-        android:src="@drawable/ic_photo_library_black_24dp" /> -->
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/student"
+        />
 
-</FrameLayout>
+    <!-- Nom-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom : "
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/poids"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="textFilter|textNoSuggestions"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <!-- Prenom-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prenom : "
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/taille"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="textFilter|textNoSuggestions"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <!-- Date de naissance-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date de naissance : "
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/naissance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="textCapSentences"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <!-- Email-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adresse mail : "
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="textFilter|textNoSuggestions"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <!-- telephne-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numéro de teléphone : "
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/telephone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <!-- android:layout_gravity="center_horizontal"-->
+
+    <TextView
+        android:id="@+id/Cours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Voir Mes UVs/Cours "
+        android:textColor="#353db3"
+        android:onClick="onClick"
+        android:clickable="true"
+        />
+
+    </LinearLayout>

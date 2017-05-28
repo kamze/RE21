@@ -13,6 +13,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView txtName, txtWebsite;
     private Toolbar toolbar;
     private FloatingActionButton fab;
+    private static final String TAG = "organiser";
 
     // urls to load navigation header background image
     // and profile image
@@ -123,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
         txtWebsite.setText("prenom.nom@utt.fr");
 
         // loading header background image
-        Glide.with(this).load(urlNavHeaderBg)
+       /* Glide.with(this).load(urlNavHeaderBg)
                 .crossFade()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(imgNavHeaderBg);
@@ -137,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
                 .into(imgProfile);
 
         // showing dot next to notifications label
-        navigationView.getMenu().getItem(3).setActionView(R.layout.menu_dot);
+        navigationView.getMenu().getItem(3).setActionView(R.layout.menu_dot);*/
     }
 
     /***
@@ -197,29 +199,32 @@ public class MainActivity extends AppCompatActivity {
         switch (navItemIndex) {
             case 0:
                 // home
+
                 AccueilFragment accueilFragment = new AccueilFragment();
+                Log.d(TAG_ACCUEIL, "navItemIndex = 0");
+
                 return accueilFragment;
             case 1:
-                // photos
-                ProfilFragment profilFragment = new ProfilFragment();
-                return profilFragment;
-            case 2:
-                // movies fragment
+                // BoiteDeReceptionFragment fragment
                 BoiteDeReceptionFragment boiteDeReceptionFragment = new BoiteDeReceptionFragment();
                 return boiteDeReceptionFragment;
-            case 3:
-                // notifications fragment
-                UVsFragment UVsFragment = new UVsFragment();
-                return UVsFragment;
+            // case 2:
+            // notifications fragment
+            //   UVsFragment UVsFragment = new UVsFragment();
+            //  return UVsFragment;
 
-            case 4:
-                // settings fragment
+            case 2:
+                // questionsFragment
                 QuestionsFragment questionsFragment = new QuestionsFragment();
                 return questionsFragment;
 
-            case 5:
+            case 3:
                 SeanceFrangment seanceFrangment = new SeanceFrangment();
                 return seanceFrangment;
+            case 4:
+                // Profil
+                ProfilFragment profilFragment = new ProfilFragment();
+                return profilFragment;
             default:
                 return new AccueilFragment();
         }
@@ -244,7 +249,7 @@ public class MainActivity extends AppCompatActivity {
                 //Check to see which item was being clicked and perform appropriate action
                 switch (menuItem.getItemId()) {
                     //Replacing the main content with ContentFragment Which is our Inbox View;
-                    case R.id.home:
+                    case R.id.nav_Accueil:
                         navItemIndex = 0;
                         CURRENT_TAG = TAG_ACCUEIL;
                         break;
@@ -253,9 +258,9 @@ public class MainActivity extends AppCompatActivity {
                         CURRENT_TAG = TAG_Boite_de_reception;
                         break;
                     //case R.id.nav_UVs:
-                      //  navItemIndex = 3;
-                      //  CURRENT_TAG = TAG_UVS;
-                      //  break;
+                    //  navItemIndex = 3;
+                    //  CURRENT_TAG = TAG_UVS;
+                    //  break;
                     case R.id.nav_Questions:
                         navItemIndex = 2;
                         CURRENT_TAG = TAG_QUESTIONS;
@@ -392,5 +397,22 @@ public class MainActivity extends AppCompatActivity {
             fab.show();
         else
             fab.hide();
+    }
+
+
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.Cours:
+                Intent intent1 = new Intent(this, UVCours.class);
+                startActivity(intent1);
+                break;
+            case R.id.organiser:
+                Intent intent2 = new Intent(this, Schedule.class);
+                startActivity(intent2);
+                break;
+            default:
+                break;
+        }
+
     }
 }

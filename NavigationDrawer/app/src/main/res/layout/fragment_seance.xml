@@ -1,14 +1,61 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:orientation="vertical"
     tools:context="info.androidhive.navigationdrawer.fragment.QuestionsFragment">
 
-    <!--<ImageView
-    android:layout_width="100dp"
-    android:layout_height="100dp"
-    android:layout_gravity="center"
-    android:alpha="0.3"
-    android:src="@drawable/ic_photo_library_black_24dp" /> -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Veuillez Choisir une UV relative à la séance de \n
+                        travaille de group"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        />
 
-</FrameLayout>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RE12"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"
+        android:buttonTint="@color/colorPrimary"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RE21"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"
+        android:buttonTint="@color/colorPrimary"
+
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SY22"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"
+        android:buttonTint="@color/colorPrimary"
+
+        />
+
+    <Button
+        android:id="@+id/organiser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Organiser"
+        android:onClick="onClick"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+</LinearLayout>

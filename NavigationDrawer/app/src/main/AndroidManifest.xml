@@ -26,6 +26,12 @@
         <activity
             android:name=".activity.PrivacyPolicyActivity"
             android:label="@string/activity_title_privacy_policy" />
+        <activity
+            android:name=".activity.UVCours"
+            android:label="@string/activity_title_uvcours" />
+        <activity
+            android:name=".activity.Schedule"
+            android:label="@string/activity_title_schedule" />
     </application>
 
 </manifest>
