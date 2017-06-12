@@ -17,15 +17,27 @@
 
     <CalendarView
         android:id="@+id/simpleCalendarView"
-        android:layout_width="230dp"
-        android:layout_height="310dp"
+        android:layout_width="330dp"
+        android:layout_height="300dp"
         android:layout_marginBottom="10dp"
         android:layout_gravity="center_horizontal"
         android:backgroundTint="#ff000000"
 
         />
 
-<LinearLayout
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:format12Hour="hh:mm:ss a"
+        android:gravity="center_horizontal"
+        android:textColor="#344aac"
+        android:textSize="44sp"
+        tools:targetApi="jelly_bean_mr1" />
+
+
+    <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -60,16 +72,16 @@
             android:hint=""
             android:inputType="textFilter|textNoSuggestions"
             android:layout_weight="14.76"
-            android:layout_marginBottom="18dp"
+            android:layout_marginBottom="1dp"
             />
     </LinearLayout>
 
 
 
     <Button
-        android:id="@+id/organiser"
+        android:id="@+id/organiser2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:text="Organiser"
         android:onClick="onClick"
         android:layout_gravity="center_horizontal"

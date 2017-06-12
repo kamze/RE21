@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView txtName, txtWebsite;
     private Toolbar toolbar;
     private FloatingActionButton fab;
+    private FloatingActionButton fabquestion;
+
     private static final String TAG = "organiser";
 
     // urls to load navigation header background image
@@ -96,10 +98,12 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent4;
+                intent4 = new Intent(MainActivity.this, AjouterQuestion.class);
+                startActivity(intent4);
             }
         });
+
 
         // load nav menu header data
         loadNavHeader();
@@ -402,14 +406,31 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View view) {
         switch (view.getId()) {
+
             case R.id.Cours:
                 Intent intent1 = new Intent(this, UVCours.class);
                 startActivity(intent1);
                 break;
+
             case R.id.organiser:
+                Log.d("organiser", "test");
+
                 Intent intent2 = new Intent(this, Schedule.class);
                 startActivity(intent2);
                 break;
+
+            case R.id.LireSuite1:
+                Intent intent3 = new Intent(this, Question.class);
+                startActivity(intent3);
+                break;
+            case R.id.addquestion:
+                Log.d("addquestion", "test add question");
+                Intent intent4 = new Intent(this, AjouterQuestion.class);
+                startActivity(intent4);
+                break;
+
+
+
             default:
                 break;
         }

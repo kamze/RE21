@@ -5,6 +5,7 @@
     <color name="colorPrimaryDark">#2224af</color>
     <item name="green" type="color">#FF00CC00</item>
     <item name="gray" type="color">#233a46</item>
+    <color name="red">#e75748</color>
 
     <color name="colorAccent">#FFFFFF</color>
 </resources>

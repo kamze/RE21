@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/radio1"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="RE12"
+            android:buttonTint="@color/gray"
+            />
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RE21"
+            android:buttonTint="@color/gray"
+
+            />
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RE14"
+            android:buttonTint="@color/gray"
+
+            />
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RE04"
+            android:buttonTint="@color/gray"
+
+            />
+    </RadioGroup>
+
+    <EditText
+        android:background="@drawable/border"
+        android:id="@+id/editTextquestion"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="16dp"
+        android:hint="Sujet"
+
+        android:inputType="textPersonName"
+ />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18dp"
+        android:text="Veuillez rediger le question dans l'espace ci-dessous:"
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress|textMultiLine"
+        android:lines="10"
+        android:minLines="5"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="8dp"
+        android:singleLine="false"
+        android:background="@drawable/border"
+
+        android:layout_weight="0.53" />
+
+    <Button
+        android:id="@+id/publier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publier"
+        android:onClick="onClick"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18dp"
+        android:text="[RE12] Jonathan /Question: Il y un exercise que je n'ai pas compris sur la résolution du DNS.
+ TD5, est-ce qu'il ne manquerait pas dans l'énoncé des données?"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:background="#000000" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="12dp"
+        android:text="28/02/2017 à 17h05" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:layout_marginBottom="10dp"
+        android:text="Arthur: Je pense que dans cet exercise il faut bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"   />
+
+
+
+    <TextView
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="12dp"
+        android:text="28/02/2017 à 18h05" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:textSize="18dp"
+        android:text="             Patrick: Je pense que dans cet\n
+            exercise il faut bla bla bla bla bla bla\n
+            bla bla bla bla bla bla bla bla bla bla \n
+            bla bla bla bla bla bla bla bla bla bla \n
+"   />
+
+
+    <TextView
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="12dp"
+        android:text="28/02/2017 à 19h05" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:textSize="18dp"
+        android:text="              Robert: Non je pense plutôt qu'il faut \n
+             le faire autrement
+"   />
+    />
+</LinearLayout>

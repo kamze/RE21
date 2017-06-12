@@ -1,14 +1,143 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="info.androidhive.navigationdrawer.fragment.QuestionsFragment">
+    android:orientation="vertical"
+    tools:context="info.androidhive.navigationdrawer.fragment.QuestionsFragment"
+    android:weightSum="1">
 
-    <!--<ImageView
-    android:layout_width="100dp"
-    android:layout_height="100dp"
-    android:layout_gravity="center"
-    android:alpha="0.3"
-    android:src="@drawable/ic_photo_library_black_24dp" /> -->
+    <EditText
+        android:id="@+id/inputSearch"
+        android:layout_width="300dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:hint="Rechercher une UV   "
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:text="[RE12] Question: Il y un exercise que je n'ai pas compris sur la résolution du DNS bla bla bla bla "
+        android:layout_weight="0.12" />
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="3dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/LireSuite1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="end|center"
+            android:textSize="18dp"
+            android:text="Lire la suite.."
+            android:onClick="onClick"
+            android:clickable="true"
+            android:textColor="#FF344AAC"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:text="[RE12] Cours: Le DNS: Domain Name Service est un service pour la bla bla bla bla bla bla" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:padding="3dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="end|center"
+            android:textSize="18dp"
+            android:text="Lire la suite.."
+            android:onClick="onClick"
+            android:clickable="true"
+            android:textColor="#FF344AAC"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:text="[RE12] Cours: Le DNS: Domain Name Service est un service pour la bla bla bla bla bla bla" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:padding="3dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="end|center"
+            android:textSize="18dp"
+            android:text="Lire la suite.."
+            android:onClick="onClick"
+            android:clickable="true"
+            android:textColor="#FF344AAC"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:text="[IF23] Question: Comment Comment marche le système GNSS" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:padding="3dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="end|center"
+            android:textSize="18dp"
+            android:text="Lire la suite.."
+            android:onClick="onClick"
+            android:clickable="true"
+            android:textColor="#FF344AAC"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/addquestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter une question"
+        android:onClick="onClick"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>

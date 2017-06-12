@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Navigation Drawer</string>
+    <string name="app_name">UTTHUB</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -29,6 +29,7 @@
 
     <string name="activity_title_about_us">About Us</string>
     <string name="activity_title_uvcours">Mes UVs</string>
+    <string name="activity_title_Question">Question/Réponse</string>
     <string name="activity_title_schedule">Organiser une séance</string>
     <string name="activity_title_privacy_policy">Privacy Policy</string>
     <string name="action_clear_all">Clear All</string>
