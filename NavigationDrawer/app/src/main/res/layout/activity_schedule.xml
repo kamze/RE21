@@ -4,40 +4,31 @@
     android:layout_height="match_parent"
 
     android:orientation="vertical"
-    tools:context="info.androidhive.navigationdrawer.fragment.QuestionsFragment">
+    tools:context="info.androidhive.navigationdrawer.fragment.QuestionsFragment"
+    android:weightSum="1">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:text="Sellectionnez une date pour faire apparaître les\nhorraires des séances déjà organisées ce jour-la "
+        android:text="Organiser une séance"
+        android:textSize="20dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="5dp"
         />
 
     <CalendarView
         android:id="@+id/simpleCalendarView"
         android:layout_width="330dp"
-        android:layout_height="300dp"
+        android:layout_height="206dp"
         android:layout_marginBottom="10dp"
         android:layout_gravity="center_horizontal"
         android:backgroundTint="#ff000000"
 
-        />
-
-    <TextClock
-        android:id="@+id/textClock"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:format12Hour="hh:mm:ss a"
-        android:gravity="center_horizontal"
-        android:textColor="#344aac"
-        android:textSize="44sp"
-        tools:targetApi="jelly_bean_mr1" />
+        android:layout_weight="0.57" />
 
 
-    <LinearLayout
+
+    <!---
+     <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -53,7 +44,17 @@
         android:text="Séance de travaille déjà organisé ce jour-là "
         android:gravity="center"
         />
+
 </LinearLayout>
+    !-->
+
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:timePickerMode="spinner"
+        android:layout_weight="0.31">
+
+    </TimePicker>
     <LinearLayout
         android:layout_width="296dp"
         android:layout_height="wrap_content"
@@ -69,7 +70,7 @@
             android:id="@+id/mail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint=""
+            android:hint="numéro de la salle"
             android:inputType="textFilter|textNoSuggestions"
             android:layout_weight="14.76"
             android:layout_marginBottom="1dp"

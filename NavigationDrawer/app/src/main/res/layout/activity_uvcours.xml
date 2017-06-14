@@ -95,7 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="meat"
+        android:text="NF16"
         android:checked="true"
         android:buttonTint="@color/colorPrimary"
         />
@@ -103,7 +103,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="meat"
+        android:text="SY16"
         android:checked="true"
         android:buttonTint="@color/colorPrimary"
 />

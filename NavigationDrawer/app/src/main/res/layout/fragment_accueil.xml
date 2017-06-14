@@ -24,7 +24,14 @@
                       forum d'aide"
         android:layout_marginBottom="10dp"
     />
-
+    <TextView
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="30dp"
+        android:text="Derniers Topics"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

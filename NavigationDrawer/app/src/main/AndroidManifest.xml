@@ -31,19 +31,26 @@
             android:label="@string/activity_title_uvcours" />
         <activity
             android:name=".activity.Schedule"
-            android:label="@string/activity_title_schedule" />
+            android:label="@string/activity_title_schedule"
+            android:windowSoftInputMode="stateHidden"/>
         <activity
             android:name=".activity.Question"
-            android:label="@string/activity_title_Question" />
+            android:label="@string/activity_title_Question"
+            android:windowSoftInputMode="stateHidden"/>
         <activity
             android:name=".activity.FullQuestion"
-            android:label="@string/activity_title_Question" />
+            android:label="@string/activity_title_Question"
+            android:windowSoftInputMode="stateHidden"
+            />
         <activity
             android:name=".activity.ViewComments"
-            android:label="@string/activity_title_Question" />
+            android:label="@string/activity_title_Question"
+            android:windowSoftInputMode="stateHidden"/>
         <activity
             android:name=".activity.AjouterQuestion"
-            android:label="Question à ajouter" />
+            android:label="Question à ajouter"
+            android:windowSoftInputMode="stateHidden"
+            />
     </application>
 
 </manifest>
